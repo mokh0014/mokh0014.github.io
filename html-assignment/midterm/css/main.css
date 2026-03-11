@@ -1,0 +1,284 @@
+/* deep forest colour palette */
+:root {
+  --forest: #2d4a2d;
+  --forest-mid: #4a7c4a;
+  --forest-pale: #e8ede8;
+  --bark: #6b4c2a;
+  --cream: #edf5ed; /* soft green form background */
+  --ink: #1e2a1e;
+  --grey-text: #3d4a3d;
+  --white: #ffffff;
+  --border: #c8d4c0;
+  --charcoal: #2a2a2a; /* page background */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* dark charcoal background */
+body {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--grey-text);
+  background-color: var(--charcoal);
+}
+
+/* hero banner */
+.hero-banner {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+/* site title on top of hero image */
+.site-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--white);
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 3px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* navigation */
+.top-nav {
+  background-color: var(--white);
+  border-bottom: 2px solid var(--forest-mid);
+}
+
+.nav-links {
+  list-style: none;
+  width: 100%;
+  display: flex;
+}
+
+.nav-links__item {
+  flex: 1;
+  border-right: 1px solid var(--border);
+}
+
+.nav-links__item:last-child {
+  border-right: none;
+}
+
+/* slightly larger font for better readability */
+.nav-links__anchor {
+  display: block;
+  text-align: center;
+  padding: 0.75rem 0;
+  text-decoration: none;
+  font-family: "Crimson Text", serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+/* light green hover with dark charcoal text */
+.nav-links__anchor:hover {
+  background-color: #c8e6c8;
+  color: var(--charcoal);
+}
+
+/* main content wrapper */
+.wrapper {
+  background-color: var(--white);
+  padding: 2.2rem clamp(1rem, 4vw, 2.8rem) 3rem;
+}
+
+/* shared heading */
+.section-head {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+/* thin divider line between sections */
+.story-section,
+.facts-section {
+  margin-bottom: 2.8rem;
+  padding-bottom: 2.8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* story */
+.story-section {
+  overflow: hidden;
+}
+
+/* wolf image floats left with rounded corners */
+.story-pic {
+  float: left;
+  width: 178px;
+  height: 138px;
+  object-fit: cover;
+  margin: 0 1.3rem 0.8rem 0;
+  border: 3px solid var(--forest-pale);
+  border-radius: 8px;
+}
+
+.body-text {
+  font-size: 0.92rem;
+  color: var(--grey-text);
+  text-align: justify;
+  margin-bottom: 0.7rem;
+}
+
+/* facts */
+.facts-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.facts-list__entry {
+  font-size: 0.9rem;
+  color: var(--grey-text);
+  margin-bottom: 0.4rem;
+}
+
+/* contact */
+.contact-section {
+  margin-bottom: 1rem;
+}
+
+/* darker cream so the form box is clearly distinct from white content area */
+.contact-form {
+  background-color: var(--cream);
+  border: 1px solid var(--border);
+  padding: 1.6rem;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+.row__label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+  font-family: "Crimson Text", serif;
+  letter-spacing: 0.04em;
+}
+
+.row__input {
+  width: 100%;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.9rem;
+  font-family: "Crimson Text", serif;
+  color: var(--grey-text);
+  background: var(--white);
+  border: 1px solid var(--border);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.row__input:focus {
+  border-color: var(--forest);
+}
+
+.row__textarea {
+  resize: vertical;
+  min-height: 88px;
+}
+
+/* radio buttons */
+.radio-block {
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.radio-block legend {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+  font-family: "Crimson Text", serif;
+}
+
+.radio-block__options {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.radio-block__options label {
+  font-size: 0.9rem;
+  color: var(--grey-text);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+/* submit button */
+.form-btn {
+  display: inline-block;
+  padding: 0.42rem 1.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: "Crimson Text", serif;
+  background-color: var(--forest);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-btn:hover {
+  background-color: var(--forest-mid);
+}
+
+/* footer matches dark background so it doesn't look disconnected */
+.page-footer {
+  background-color: var(--charcoal);
+  border-top: 1px solid #444;
+  padding: 0.65rem clamp(1rem, 4vw, 2.8rem);
+  text-align: right;
+  font-size: 0.78rem;
+  color: #aaaaaa;
+}
+
+/* large screens */
+@media (min-width: 1024px) {
+  /* make the wide hero image box a bit taller */
+  .hero-banner {
+    height: 280px;
+  }
+
+  /* add a bit more breathing room for the main content */
+  .wrapper {
+    padding: 2.6rem 8rem 3.4rem;
+  }
+}

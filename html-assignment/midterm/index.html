@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lone Wolf</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="hero-banner">
+      <img
+        class="hero-img"
+        src="images/wolves-wide.jpg"
+        alt="wolf howling in a dark forest"
+      />
+      <h1 class="site-title">Lone Wolf</h1>
+    </div>
+
+    <div class="top-nav">
+      <ul class="nav-links">
+        <li class="nav-links__item">
+          <a class="nav-links__anchor" href="#wrapper">Home</a>
+        </li>
+        <li class="nav-links__item">
+          <a class="nav-links__anchor" href="#wolf-facts">Facts</a>
+        </li>
+        <li class="nav-links__item">
+          <a class="nav-links__anchor" href="#get-in-touch">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="wrapper" id="wrapper">
+      <div class="story-section">
+        <h2 class="section-head">Life of a Wolf</h2>
+        <!-- wolf image on the left with text flowing beside it -->
+        <img
+          class="story-pic"
+          src="images/wolf.jpg"
+          alt="a lone wolf standing in the forest"
+        />
+        <p class="body-text">
+          Wolves are among the most iconic and misunderstood animals on the
+          planet. As apex predators, they play a vital role in maintaining the
+          balance of ecosystems wherever they roam. A wolf's life is deeply
+          social, centred around a family unit known as a pack, which typically
+          consists of a breeding pair and their offspring from several seasons.
+          The pack works together to hunt large prey such as elk, moose, and
+          bison, using coordinated strategies that demonstrate remarkable
+          intelligence and teamwork. Wolves communicate through a rich
+          combination of howling, body language, facial expressions, and scent
+          marking. A howl can carry over distances of up to ten kilometres and
+          serves many purposes, from rallying the pack before a hunt to warning
+          rival packs to stay away from their territory. Wolf pups are born
+          blind and helpless and rely entirely on their parents and older
+          siblings for food and protection during their first weeks of life. By
+          the time they are a few months old they begin to explore, play, and
+          learn the complex social rules of pack life. Wolves have an
+          extraordinary sense of smell, estimated to be roughly one hundred
+          times more powerful than that of a human, which they use to track prey
+          across vast distances even through snow and dense forest. Their
+          stamina is equally impressive; a wolf can trot at around eight
+          kilometres per hour for hours on end and sprint at up to sixty
+          kilometres per hour when closing in on prey. Despite centuries of
+          persecution and habitat loss, wolf populations have made remarkable
+          recoveries in parts of Europe and North America thanks to dedicated
+          conservation programmes. The reintroduction of wolves to Yellowstone
+          National Park in 1995 became one of the most celebrated conservation
+          success stories in history, triggering a cascade of ecological changes
+          that restored rivers, forests, and entire species communities through
+          a process scientists call a trophic cascade.
+        </p>
+        <p class="body-text">
+          Wolves have long held a powerful place in human mythology and culture,
+          appearing as symbols of both fear and strength across countless
+          civilisations. In Norse mythology, the giant wolf Fenrir was seen as a
+          force powerful enough to threaten the gods themselves. Native American
+          cultures have traditionally regarded the wolf with deep respect,
+          viewing it as a teacher, a guide, and a symbol of loyalty and
+          endurance. Today, as attitudes toward wildlife shift toward
+          coexistence rather than conflict, the wolf is increasingly seen as a
+          symbol of wild nature worth protecting.
+        </p>
+      </div>
+
+      <div class="facts-section" id="wolf-facts">
+        <h2 class="section-head">Facts About Wolves</h2>
+        <ul class="facts-list">
+          <li class="facts-list__entry">
+            Wolves are the largest members of the dog family and can weigh up to
+            80 kilograms depending on their subspecies and region.
+          </li>
+          <li class="facts-list__entry">
+            A wolf pack's territory can range from 80 to over 2,500 square
+            kilometres depending on prey availability.
+          </li>
+          <li class="facts-list__entry">
+            Wolves mate for life and both parents are actively involved in
+            raising and protecting their pups.
+          </li>
+          <li class="facts-list__entry">
+            The howl of a wolf is unique to each individual, allowing pack
+            members to identify one another by sound alone.
+          </li>
+          <li class="facts-list__entry">
+            Wolves were once the most widespread land mammals on Earth, living
+            across North America, Europe, Asia, and parts of Africa.
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact-section" id="get-in-touch">
+        <h2 class="section-head">Contact to learn more</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="row">
+            <label class="row__label" for="c-name">Your Name</label>
+            <input
+              class="row__input"
+              type="text"
+              id="c-name"
+              name="c-name"
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div class="row">
+            <label class="row__label" for="c-email">Your Email</label>
+            <input
+              class="row__input"
+              type="email"
+              id="c-email"
+              name="c-email"
+              placeholder="Enter your email address"
+            />
+          </div>
+
+          <div class="row">
+            <label class="row__label" for="c-message">Your Message</label>
+            <textarea
+              class="row__input row__textarea"
+              id="c-message"
+              name="c-message"
+              placeholder="Write your message here"
+            ></textarea>
+          </div>
+
+          <fieldset class="radio-block">
+            <legend class="row__label">
+              Would you like to visit a wolf sanctuary?
+            </legend>
+            <div class="radio-block__options">
+              <label for="r-yes"
+                ><input type="radio" id="r-yes" name="sanctuary" value="yes" />
+                Yes</label
+              >
+              <label for="r-no"
+                ><input type="radio" id="r-no" name="sanctuary" value="no" />
+                No</label
+              >
+              <label for="r-maybe"
+                ><input
+                  type="radio"
+                  id="r-maybe"
+                  name="sanctuary"
+                  value="maybe"
+                />
+                Maybe</label
+              >
+            </div>
+          </fieldset>
+
+          <button class="form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <p>&copy; Lone Wolf.</p>
+    </div>
+  </body>
+</html>
